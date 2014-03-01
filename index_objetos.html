@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>JavaScript</title>
+		<style>
+			h1
+			{
+				color:red;
+				font-size: 18px;
+			}
+		
+		
+			p
+			{
+				color:blue;
+				font-size: 16px;		
+			}
+		</style>
+		<script>
+		 /*declarar un objeto*/
+		var persona = new Object();
+		
+		persona.nombre = "Humberto";
+		persona.apellido = "San Martin";
+	    persona.hablar = function()
+	    {
+	    	document.write("<p>Hola Tigre</p>");
+	    };
+		 
+		 
+		persona.hablar();
+		document.write("<p>Nombre: " + persona.nombre + "</p>");
+		document.write("<p>Apellido: " + persona.apellido + "</p>");
+		
+		
+		
+		/*declarar un objeto con notacion JSON
+		 (JavaScript Object Notation)*/
+		
+		var alumno = {
+			nombre : "Humberto",
+			apellido : "San Martin",
+			hablar : function()
+			{
+				document.write("<h1>Yo soy un Programador!!!!!!!!</h1>");
+			}
+		};
+		
+		alumno.hablar();
+		 	 	
+		alumno.nombre = "Bryan";
+		alumno.apellido = "SMartin";
+		 	 	
+		document.write("<p>Alumno " + alumno.nombre + "</p>"); 	 	
+		 	 	
+		//variante de JSON
+		var carro = {};
+		
+		carro.modelo = "1968";
+		carro.marca = "Ford";
+		carro.arrancar = function()
+		{
+			document.write("<p>run run run</p>");			
+		} ;
+		
+		carro.arrancar();
+		 	 	 
+		</script>		
+	</head>
+	<body>
+		<p>Aprendiendo Javascript</p>
+		
+		
+		
+		<noscript>Habilite Javascript</noscript>
+	</body>
+</html>

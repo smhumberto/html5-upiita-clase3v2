@@ -5,7 +5,24 @@
         <title>Texto a numero</title>
         <script>
          /*Aquí todo el código en javaScript*/
-
+		var usuario = {};
+		
+		var nombre = prompt("Cual es su nombre");
+		var apellido = prompt("Cual es su apellido");
+		var edad = prompt("Cua es su edad");
+		
+		
+		usuario.nombre = nombre;
+		usuario.apellido = apellido;
+		usuario.edad = edad;
+		
+		function verDatosUsuario(usuario)
+		{
+			document.write("<p>Nombre: " + usuario.nombre + " Apellido: " + usuario.apellido + " Edad: "+ usuario.edad + "</p>");
+		}
+		
+		verDatosUsuario(usuario);
+		
         </script>
     </head>
     <body>

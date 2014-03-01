@@ -3,8 +3,20 @@
     <head>
         <meta charset="UTF-8"/>
         <title>JavaScript</title>
+        <style>
+        	p
+        	{
+        		color:blue;
+        		font-size: 14ppx;
+        	}
+        </style>
         <script>
+         var nombre = prompt("cual es su nombre: ");
+         var apPaterno = prompt("cual es su apellido paterno");
+         var apMaterno = prompt("cual es su apellido materno");
+         var edad = prompt("Cual es su edad");
          
+         document.write("<p>Datos del usuario Nombre:" + nombre + " " + apPaterno+ " " + apMaterno + " Edad: " + edad  + "</p>");         
         </script>
     </head>
     <body>
